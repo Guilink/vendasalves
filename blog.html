@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Vendas Alves - Artigos técnicos e novidades sobre o mercado do aço, perfis estruturais e muito mais.">
+    <title>Blog | Vendas Alves</title>
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5511988238004" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- BARRA DE TOPO -->
+    <div class="top-bar">
+        <div class="top-info">
+            <span><i class="fas fa-map-marker-alt"></i> Sítio Cercado, Curitiba - PR</span>
+            <span><i class="fas fa-envelope"></i> alvesvendas@grupoacos.com.br</span>
+        </div>
+        <div class="top-social">
+            <span>Atendimento Nacional</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO (SEM FUNDO) -->
+        <a href="index.html" class="logo-container">
+            <img src="imagens/logo.png" alt="Vendas Alves Logo" class="logo-img">
+        </a>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#produtos">Produtos</a>
+            <a href="index.html#destaques">Destaques</a>
+            <a href="index.html#filiais">Filiais</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section" id="blog">
+        <div class="section-title">
+            <h2>Blog & Notícias</h2>
+            <p style="color: var(--text-secondary); margin-top: 10px;">Artigos técnicos e novidades sobre o mercado do aço.</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Post 1 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Produtos</span>
+                    <img src="imagens/perfil-w.jpg" alt="Perfil W">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Perfil W: Conheça Nossa Especialidade em Perfis Dobrados</h3>
+                    <p class="blog-excerpt">Somos especialistas em perfil W e perfis dobrados de aço. Qualidade, resistência e fabricação sob medida para estruturas metálicas.</p>
+                    <button class="read-more" onclick="openModal(1)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Serviços</span>
+                    <img src="imagens/chapas.jpg" alt="Corte a Laser">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Corte a Laser: Precisão e Qualidade para Seus Projetos</h3>
+                    <p class="blog-excerpt">Descubra por que o corte a laser é referência em precisão, versatilidade e acabamento superior. Ideal para indústrias e design.</p>
+                    <button class="read-more" onclick="openModal(2)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Produtos</span>
+                    <img src="imagens/tubos.jpg" alt="Tubos Metálicos">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Tubos Metálicos: Guia Completo dos Modelos DIN 2440 e Schedule</h3>
+                    <p class="blog-excerpt">Descubra tudo sobre tubos metálicos DIN 2440, industrial, Schedule 40 e 80. Escolha o modelo ideal para seu projeto com segurança.</p>
+                    <button class="read-more" onclick="openModal(3)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Serviços</span>
+                    <img src="imagens/perfis-soldados.jpg" alt="Projetos Especiais">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Projetos Especiais: Personalização Total para Suas Necessidades</h3>
+                    <p class="blog-excerpt">Soluções sob medida para projetos especiais. Corte, dobra e perfis personalizados com precisão, qualidade e entrega rápida.</p>
+                    <button class="read-more" onclick="openModal(4)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Produtos</span>
+                    <img src="imagens/perfis-soldados.jpg" alt="Viga Soldada">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Viga Soldada: Fabricação, Vantagens e Aplicações</h3>
+                    <p class="blog-excerpt">Saiba tudo sobre vigas soldadas: fabricação, vantagens e aplicações. Soluções estruturais personalizadas com alta resistência.</p>
+                    <button class="read-more" onclick="openModal(5)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Produtos</span>
+                    <img src="imagens/barras.jpg" alt="Trilhos Ferroviários">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Trilhos Ferroviários: Especificações, Tipos e Aplicações</h3>
+                    <p class="blog-excerpt">Conheça as especificações dos trilhos ferroviários, seus tipos e aplicações. Qualidade e resistência para projetos de alta performance.</p>
+                    <button class="read-more" onclick="openModal(6)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 7 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Produtos</span>
+                    <img src="imagens/chapas.jpg" alt="Chapas de Aço">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Chapas de Aço: Laminadas a Quente e a Frio – Entenda as Diferenças</h3>
+                    <p class="blog-excerpt">Entenda as diferenças entre chapas de aço laminadas a quente e a frio. Escolha o material ideal para o seu projeto.</p>
+                    <button class="read-more" onclick="openModal(7)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 8 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Produtos</span>
+                    <img src="imagens/perfis-dobrados.jpg" alt="Estaca Prancha">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Estaca Prancha: Aplicações, Vantagens e Técnicas de Instalação</h3>
+                    <p class="blog-excerpt">Entenda como a estaca prancha é utilizada na contenção de solos. Aplicações, vantagens e métodos de instalação para obras civis.</p>
+                    <button class="read-more" onclick="openModal(8)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Post 9 -->
+            <article class="blog-card">
+                <div class="blog-img-wrapper">
+                    <span class="blog-tag">Tecnologia</span>
+                    <img src="imagens/perfis-soldados.jpg" alt="Perfis Soldados Tecnologia">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date"><i class="far fa-calendar-alt"></i> 01/12/2025</div>
+                    <h3 class="blog-title">Perfis Soldados: Tecnologia de Ponta para Projetos Estruturais</h3>
+                    <p class="blog-excerpt">Descubra as vantagens dos perfis soldados para projetos estruturais. Tecnologia, precisão e personalização com alto desempenho.</p>
+                    <button class="read-more" onclick="openModal(9)">Leia Mais <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- MODAL BLOG -->
+    <div class="modal-overlay" id="blogModal">
+        <div class="modal-content">
+            <div class="close-modal" onclick="closeModal()">&times;</div>
+            <div class="modal-body" id="modalBody">
+                <!-- Conteúdo Dinâmico -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contato">
+        <div class="footer-grid">
+            <div class="footer-item">
+                <!-- Logo no Footer -->
+                <img src="imagens/logo.png" alt="Vendas Alves" class="footer-logo-img">
+                
+                <p style="color: var(--text-secondary);">
+                    Soluções completas em aço para sua obra ou indústria. Qualidade garantida e atendimento especializado.
+                </p>
+            </div>
+
+            <div class="footer-item">
+                <h3>Contato</h3>
+                <p style="margin-bottom: 10px;"><i class="fas fa-phone-alt" style="color:var(--accent-color); margin-right:10px;"></i> +55 11 98823-8004</p>
+                <p style="margin-bottom: 10px;"><i class="fas fa-envelope" style="color:var(--accent-color); margin-right:10px;"></i> alvesvendas@grupoacos.com.br</p>
+                <p><i class="fas fa-map-marked" style="color:var(--accent-color); margin-right:10px;"></i> Sítio Cercado, Curitiba - PR</p>
+            </div>
+
+            <div class="footer-item">
+                <h3>Links</h3>
+                <ul style="line-height: 2; color: var(--text-secondary);">
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="index.html#filiais">Empresas do Grupo</a></li>
+                    <li><a href="blog.html">Blog de Notícias</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; color: #555; font-size: 0.8rem;">
+            &copy; 2025 Vendas Alves. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Dados do Blog (Simulação de Banco de Dados)
+        const blogPosts = {
+            1: {
+                title: "Perfil W: Conheça Nossa Especialidade em Perfis Dobrados de Alta Qualidade",
+                date: "01/12/2025",
+                tag: "Produtos",
+                image: "imagens/perfil-w.jpg",
+                content: `
+                    <p>O <strong>Perfil W</strong> (Wide Flange) é um dos elementos estruturais mais versáteis e eficientes da construção civil moderna. Sua geometria em forma de "I" ou "H" com abas largas confere uma excelente relação resistência-peso, permitindo vencer grandes vãos com menor quantidade de aço.</p>
+                    
+                    <h4>Por que escolher o Perfil W?</h4>
+                    <p>Diferente dos perfis laminados padrão, o Perfil W oferece uma ampla gama de bitolas, permitindo aos engenheiros calculistas otimizarem seus projetos com precisão milimétrica. Suas principais vantagens incluem:</p>
+                    <ul>
+                        <li><strong>Alta Resistência Mecânica:</strong> Ideal para pilares e vigas de grandes edifícios.</li>
+                        <li><strong>Economia:</strong> Redução do peso total da estrutura, impactando positivamente nas fundações.</li>
+                        <li><strong>Agilidade na Montagem:</strong> Peças industrializadas que chegam prontas para montagem no canteiro.</li>
+                    </ul>
+
+                    <h4>Nossa Especialidade</h4>
+                    <p>Na Vendas Alves, somos especialistas no fornecimento de Perfil W e perfis dobrados sob medida. Trabalhamos com aço de alta qualidade, certificado e rastreável. Seja para uma pequena estrutura metálica ou para um grande galpão industrial, temos a solução exata para sua necessidade.</p>
+                    <p>Além do fornecimento, oferecemos suporte técnico para ajudar na escolha da melhor bitola para o seu projeto, garantindo segurança e custo-benefício.</p>
+                `
+            },
+            2: {
+                title: "Corte a Laser: Precisão e Qualidade para Seus Projetos",
+                date: "01/12/2025",
+                tag: "Serviços",
+                image: "imagens/chapas.jpg",
+                content: `
+                    <p>O <strong>corte a laser</strong> revolucionou a indústria metalmecânica, oferecendo um nível de precisão e acabamento impossível de ser alcançado por métodos tradicionais como o oxicorte ou o corte mecânico.</p>
+
+                    <h4>Vantagens do Corte a Laser</h4>
+                    <p>Esta tecnologia utiliza um feixe de luz concentrado para fundir e vaporizar o material, resultando em bordas limpas, sem rebarbas e com tolerâncias dimensionais extremamente baixas.</p>
+                    <ul>
+                        <li><strong>Precisão Milimétrica:</strong> Cortes complexos com detalhes finos.</li>
+                        <li><strong>Versatilidade:</strong> Corta aço carbono, inox, alumínio e outras ligas.</li>
+                        <li><strong>Rapidez:</strong> Alta velocidade de processamento, ideal para produção em série.</li>
+                        <li><strong>Acabamento Superior:</strong> Muitas vezes elimina a necessidade de usinagem posterior.</li>
+                    </ul>
+
+                    <h4>Aplicações</h4>
+                    <p>Desde peças para máquinas agrícolas até componentes decorativos de arquitetura, o corte a laser atende aos mais diversos setores. Nossa tecnologia de ponta permite cortes em diversas espessuras, mantendo a qualidade do corte tanto em chapas finas quanto grossas.</p>
+                `
+            },
+            3: {
+                title: "Tubos Metálicos: Guia Completo dos Modelos DIN 2440, Industrial, Schedule 40 e 80",
+                date: "01/12/2025",
+                tag: "Produtos",
+                image: "imagens/tubos.jpg",
+                content: `
+                    <p>Escolher o tubo de aço correto é crucial para a segurança e eficiência de qualquer instalação, seja ela estrutural ou de condução de fluidos. Conheça as principais diferenças entre os modelos mais utilizados no mercado.</p>
+
+                    <h4>Tubos DIN 2440 (NBR 5580)</h4>
+                    <p>Conhecidos como tubos de condução leve ou média, são ideais para condução de água, gás, vapor e ar comprimido em baixas pressões. São frequentemente usados em instalações prediais e de combate a incêndio.</p>
+
+                    <h4>Tubos Schedule (SCH 40 e SCH 80)</h4>
+                    <p>A classificação "Schedule" refere-se à espessura da parede do tubo em relação ao seu diâmetro nominal. Quanto maior o número, mais grossa a parede e maior a resistência à pressão.</p>
+                    <ul>
+                        <li><strong>Schedule 40:</strong> O padrão mais comum para linhas de processo industriais e estruturais.</li>
+                        <li><strong>Schedule 80:</strong> Paredes mais espessas para aplicações de alta pressão ou ambientes corrosivos.</li>
+                    </ul>
+
+                    <h4>Tubos Industriais</h4>
+                    <p>Geralmente com costura, são focados em aplicações estruturais (móveis, estruturas metálicas, corrimãos) onde a resistência mecânica e o acabamento estético são prioridades, mas não necessariamente a estanqueidade para altas pressões.</p>
+                `
+            },
+            4: {
+                title: "Projetos Especiais: Personalização Total para Suas Necessidades",
+                date: "01/12/2025",
+                tag: "Serviços",
+                image: "imagens/perfis-soldados.jpg",
+                content: `
+                    <p>Nem todo projeto se encaixa nos padrões de mercado. É aí que entra nossa divisão de <strong>Projetos Especiais</strong>. Entendemos que cada obra tem seus desafios únicos, seja por restrições de espaço, cargas específicas ou design arquitetônico arrojado.</p>
+
+                    <h4>Do Desenho à Entrega</h4>
+                    <p>Trabalhamos em estreita colaboração com engenheiros e arquitetos para transformar ideias em estruturas de aço reais. Nossa capacidade de fabricação flexível nos permite produzir:</p>
+                    <ul>
+                        <li>Vigas de inércia variável.</li>
+                        <li>Perfis com furações e recortes especiais.</li>
+                        <li>Peças calandradas ou dobradas em geometrias complexas.</li>
+                        <li>Conjuntos soldados prontos para instalação.</li>
+                    </ul>
+
+                    <h4>Por que personalizar?</h4>
+                    <p>A personalização reduz o desperdício de material, diminui o tempo de montagem no canteiro e garante que a estrutura atenda exatamente aos requisitos de carga e estética do projeto final.</p>
+                `
+            },
+            5: {
+                title: "Viga Soldada: Fabricação, Vantagens e Aplicações em Estruturas Metálicas",
+                date: "01/12/2025",
+                tag: "Produtos",
+                image: "imagens/perfis-soldados.jpg",
+                content: `
+                    <p>As <strong>Vigas Soldadas</strong> (ou perfis eletrossoldados) são a espinha dorsal das grandes construções metálicas. Fabricadas a partir de chapas de aço cortadas e soldadas longitudinalmente, elas oferecem uma liberdade de dimensionamento que os perfis laminados não conseguem atingir.</p>
+
+                    <h4>Processo de Fabricação</h4>
+                    <p>O processo envolve o corte das chapas (almas e mesas) nas medidas exatas de projeto, seguido pela montagem e soldagem automática (arco submerso), garantindo penetração total e uniformidade do cordão de solda.</p>
+
+                    <h4>Vantagens Competitivas</h4>
+                    <ul>
+                        <li><strong>Sob Medida:</strong> Altura da alma, largura das mesas e espessuras podem ser combinadas livremente.</li>
+                        <li><strong>Grandes Vãos:</strong> Permite a criação de vigas muito mais altas e resistentes que as laminadas padrão.</li>
+                        <li><strong>Otimização de Peso:</strong> É possível variar a espessura das chapas ao longo da viga (vigas de inércia variável) para colocar material apenas onde é necessário.</li>
+                    </ul>
+
+                    <p>São amplamente utilizadas em pontes, viadutos, galpões industriais de grande porte e edifícios comerciais (shoppings, centros de distribuição).</p>
+                `
+            },
+            6: {
+                title: "Trilhos Ferroviários: Especificações, Tipos e Aplicações",
+                date: "01/12/2025",
+                tag: "Produtos",
+                image: "imagens/barras.jpg",
+                content: `
+                    <p>Os <strong>Trilhos Ferroviários</strong> não servem apenas para trens. Sua alta capacidade de carga e resistência ao desgaste os tornam ideais para diversas aplicações industriais pesadas.</p>
+
+                    <h4>Tipos de Trilhos (TR)</h4>
+                    <p>A nomenclatura TR refere-se ao peso aproximado por metro linear do trilho. Os mais comuns são:</p>
+                    <ul>
+                        <li><strong>TR 25 / TR 30:</strong> Trilhos leves, usados em vagonetas de mineração, linhas industriais leves e aplicações agroindustriais.</li>
+                        <li><strong>TR 37 / TR 45:</strong> Médio porte, comuns em ramais ferroviários secundários e pontes rolantes de média capacidade.</li>
+                        <li><strong>TR 57 / TR 68:</strong> Trilhos pesados para ferrovias de carga e pontes rolantes de grande porte em siderúrgicas e portos.</li>
+                    </ul>
+
+                    <h4>Aplicações Industriais</h4>
+                    <p>Além de ferrovias, fornecemos trilhos para caminhos de rolamento de pontes rolantes, pórticos, sistemas de movimentação de carga e até como elementos estruturais de proteção (bate-rodas).</p>
+                `
+            },
+            7: {
+                title: "Chapas de Aço: Laminadas a Quente e a Frio – Entenda as Diferenças",
+                date: "01/12/2025",
+                tag: "Produtos",
+                image: "imagens/chapas.jpg",
+                content: `
+                    <p>O universo das chapas de aço é vasto. Entender a diferença entre os processos de laminação é fundamental para escolher o material certo para sua aplicação.</p>
+
+                    <h4>Laminadas a Quente</h4>
+                    <p>Processadas em altas temperaturas (acima de 900°C), essas chapas são mais fáceis de conformar. Possuem uma superfície cinza-azulada e tolerâncias dimensionais menos rigorosas.</p>
+                    <p><strong>Uso:</strong> Estruturas metálicas, tubos estruturais, rodas, peças automotivas pesadas, tanques.</p>
+
+                    <h4>Laminadas a Frio</h4>
+                    <p>São chapas laminadas a quente que passam por um processamento adicional em temperatura ambiente. Isso aumenta a resistência mecânica, melhora o acabamento superficial (mais liso e brilhante) e garante medidas mais precisas.</p>
+                    <p><strong>Uso:</strong> Eletrodomésticos, móveis de aço, painéis elétricos, indústria automobilística (lataria).</p>
+
+                    <h4>Outros Tipos</h4>
+                    <p>Além destas, trabalhamos com chapas galvanizadas (proteção contra corrosão) e chapas xadrez (antiderrapantes para pisos).</p>
+                `
+            },
+            8: {
+                title: "Estaca Prancha: Aplicações, Vantagens e Técnicas de Instalação",
+                date: "01/12/2025",
+                tag: "Produtos",
+                image: "imagens/perfis-dobrados.jpg",
+                content: `
+                    <p>As <strong>Estacas Prancha</strong> são perfis de aço com encaixes laterais (macho e fêmea) que permitem a cravação contínua no solo, formando uma parede de contenção estanque e resistente.</p>
+
+                    <h4>Principais Aplicações</h4>
+                    <ul>
+                        <li><strong>Contenção de Solos:</strong> Em escavações de subsolos, valas para tubulações e túneis.</li>
+                        <li><strong>Obras Portuárias:</strong> Cais, píeres e quebra-mares.</li>
+                        <li><strong>Proteção Ambiental:</strong> Barreiras para contenção de contaminantes no solo.</li>
+                        <li><strong>Ensecadeiras:</strong> Estruturas temporárias para realizar obras dentro da água (ex: pilares de pontes).</li>
+                    </ul>
+
+                    <h4>Vantagens</h4>
+                    <p>A principal vantagem é a reutilização. Em obras temporárias, as estacas podem ser retiradas após o uso e reaproveitadas em outros projetos, tornando-se uma solução econômica e sustentável. Além disso, sua instalação é rápida e limpa comparada a muros de concreto.</p>
+                `
+            },
+            9: {
+                title: "Perfis Soldados: Tecnologia de Ponta para Projetos Estruturais e Industriais",
+                date: "01/12/2025",
+                tag: "Tecnologia",
+                image: "imagens/perfis-soldados.jpg",
+                content: `
+                    <p>A tecnologia por trás da fabricação de perfis soldados evoluiu drasticamente. Hoje, utilizamos processos automatizados que garantem a integridade estrutural necessária para as obras mais exigentes do mundo.</p>
+
+                    <h4>Soldagem por Arco Submerso (SAW)</h4>
+                    <p>Nossa linha de produção utiliza o processo SAW, onde o arco elétrico fica coberto por uma camada de fluxo granular. Isso protege a poça de fusão da contaminação atmosférica e evita respingos, resultando em uma solda profunda, uniforme e de altíssima qualidade.</p>
+
+                    <h4>Controle de Qualidade</h4>
+                    <p>Não basta soldar; é preciso garantir. Nossos perfis passam por rigorosos testes:</p>
+                    <ul>
+                        <li><strong>Ensaios Visuais e Dimensionais:</strong> Verificação de medidas e acabamento.</li>
+                        <li><strong>Ultrassom:</strong> Para detectar falhas internas na solda.</li>
+                        <li><strong>Líquido Penetrante:</strong> Para falhas superficiais.</li>
+                    </ul>
+
+                    <p>Investir em tecnologia de fabricação é investir na segurança das pessoas que utilizarão as estruturas construídas com nosso aço.</p>
+                `
+            }
+        };
+
+        // Funções do Modal
+        function openModal(id) {
+            const post = blogPosts[id];
+            const modal = document.getElementById('blogModal');
+            const modalBody = document.getElementById('modalBody');
+
+            if (post) {
+                modalBody.innerHTML = `
+                    <div class="modal-img-container">
+                        <img src="${post.image}" alt="${post.title}" class="modal-img">
+                    </div>
+                    <div class="modal-text-content">
+                        <h2 class="modal-title">${post.title}</h2>
+                        <div class="modal-meta">
+                            <span><i class="far fa-calendar-alt"></i> ${post.date}</span>
+                            <span><i class="fas fa-tag"></i> ${post.tag}</span>
+                        </div>
+                        <div class="modal-text">
+                            ${post.content}
+                        </div>
+                    </div>
+                `;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Impede rolagem do fundo
+            }
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('blogModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fechar modal ao clicar fora
+        document.getElementById('blogModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Toggle Menu Mobile
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

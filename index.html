@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vendas Alves - Representante de vendas da Aços Continente. Perfil W, Perfil Soldado e produtos siderúrgicos.">
+    <title>Vendas Alves | Soluções em Aço</title>
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5511988238004" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- BARRA DE TOPO -->
+    <div class="top-bar">
+        <div class="top-info">
+            <span><i class="fas fa-map-marker-alt"></i> Sítio Cercado, Curitiba - PR</span>
+            <span><i class="fas fa-envelope"></i> alvesvendas@grupoacos.com.br</span>
+        </div>
+        <div class="top-social">
+            <span>Atendimento Nacional</span>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO (SEM FUNDO) -->
+        <a href="#" class="logo-container">
+            <img src="imagens/logo.png" alt="Vendas Alves Logo" class="logo-img">
+        </a>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#destaques">Destaques</a>
+            <a href="#filiais">Filiais</a>
+            <a href="blog.html">Blog</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>ESPECIALISTA EM <br><span>PERFIL W E SOLDADO</span></h1>
+            <p>
+                Representante de vendas da Aços Continente — Grupo Aços. 
+                Mais de 30 anos de expertise em produtos siderúrgicos.
+            </p>
+            <div>
+                <a href="#produtos" class="btn-main">Ver Catálogo Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS SECTION -->
+    <section class="products-section" id="produtos">
+        <div class="section-title">
+            <h2>Nossos Produtos</h2>
+            <p style="color: var(--text-secondary); margin-top: 10px;">Linha completa de aços planos e longos.</p>
+        </div>
+
+        <div class="products-grid">
+            
+            <!-- 1. Perfil W -->
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/perfil-w.jpg" alt="Perfil W">
+                </div>
+                <div class="card-content">
+                    <h3>Perfil W e Vigas</h3>
+                    <ul>
+                        <li>Vigas Laminadas (I e H)</li>
+                        <li>Ampla variedade de bitolas</li>
+                        <li>Alta resistência estrutural</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+            <!-- 2. Perfil Soldado (Destaque) -->
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/perfis-soldados.jpg" alt="Perfis Soldados">
+                </div>
+                <div class="card-content">
+                    <h3>Perfis Soldados</h3>
+                    <ul>
+                        <li>Fabricação sob medida</li>
+                        <li>Ideal para grandes vãos</li>
+                        <li>Controle rigoroso de solda</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+            <!-- 3. Perfil Dobrado -->
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/perfis-dobrados.jpg" alt="Perfis Dobrados">
+                </div>
+                <div class="card-content">
+                    <h3>Perfis Dobrados e Z</h3>
+                    <ul>
+                        <li>Perfis U, Z e Cartola</li>
+                        <li>Conformados a frio</li>
+                        <li>Leveza e acabamento</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+            <!-- 4. Chapas -->
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/chapas.jpg" alt="Chapas de Aço">
+                </div>
+                <div class="card-content">
+                    <h3>Chapas de Aço</h3>
+                    <ul>
+                        <li>Laminadas a quente e frio</li>
+                        <li>Chapas Grossas e Finas</li>
+                        <li>Xadrez e Galvanizadas</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+            <!-- 5. Tubos -->
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/tubos.jpg" alt="Tubos de Aço">
+                </div>
+                <div class="card-content">
+                    <h3>Tubos de Aço</h3>
+                    <ul>
+                        <li>Redondos, Quadrados e Retangulares</li>
+                        <li>Com e sem costura</li>
+                        <li>Normas industriais</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+            <!-- 6. Bobinas -->
+            <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/bobinas.jpg" alt="Bobinas de Aço">
+                </div>
+                <div class="card-content">
+                    <h3>Bobinas de Aço</h3>
+                    <ul>
+                        <li>Bobininhas e Bobinas Mãe</li>
+                        <li>Corte longitudinal (Slitter)</li>
+                        <li>Diversas espessuras</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+             <!-- 7. Barras -->
+             <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/barras.jpg" alt="Barras de Aço">
+                </div>
+                <div class="card-content">
+                    <h3>Barras de Aço</h3>
+                    <ul>
+                        <li>Barras Chatas, Quadradas e Redondas</li>
+                        <li>Laminadas e Trefiladas</li>
+                        <li>Aço para construção</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+             <!-- 8. Laminados -->
+             <div class="product-card">
+                <div class="card-img-wrapper">
+                    <img src="imagens/perfis-laminados.jpg" alt="Perfis Laminados">
+                </div>
+                <div class="card-content">
+                    <h3>Perfis Laminados</h3>
+                    <ul>
+                        <li>Cantoneiras</li>
+                        <li>Vigas Padrão</li>
+                        <li>Pronta entrega</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5511988238004" class="card-cta">Orçar Agora</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DESTAQUE TÉCNICO -->
+    <section class="tech-section" id="destaques">
+        <div class="tech-container">
+            <div class="tech-info">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;">Foco em Qualidade e <span style="color:var(--accent-color)">Entrega</span></h2>
+                <p style="color: var(--text-secondary); margin-bottom: 30px;">
+                    Nossa especialidade é o Perfil Soldado e o Perfil W. Entregamos soluções que otimizam o peso da estrutura mantendo a máxima resistência mecânica.
+                </p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Logística integrada para todo Brasil</li>
+                    <li><i class="fas fa-check-circle"></i> Material com certificado de origem</li>
+                    <li><i class="fas fa-check-circle"></i> Atendimento técnico especializado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILIAIS / GRUPO (IMAGENS + TEXTO ELEGANTE) -->
+    <section class="branches-section" id="filiais">
+        <div class="section-title" style="margin-bottom: 30px;">
+            <h2>Grupo ACSO - Empresas e Unidades</h2>
+            <p style="color: var(--text-secondary);">Presença nacional através das empresas do grupo.</p>
+        </div>
+        
+        <div class="partners-grid">
+            <!-- MATRIZ -->
+            <div class="partner-card">
+                <img src="imagens/matriz.png" alt="Aços Continente">
+                <div class="branch-info">
+                    <i class="fas fa-industry"></i>
+                    <span>Matriz Curitiba</span>
+                </div>
+            </div>
+
+            <!-- SP -->
+            <div class="partner-card">
+                <img src="imagens/sp.png" alt="ACSO">
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Filial São Paulo</span>
+                </div>
+            </div>
+
+            <!-- RJ -->
+            <div class="partner-card">
+                <img src="imagens/rj.png" alt="ASSO">
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Filial Rio de Janeiro</span>
+                </div>
+            </div>
+
+            <!-- MINAS -->
+            <div class="partner-card">
+                <img src="imagens/minas.png" alt="ACÇO">
+                <div class="branch-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Filial Minas Gerais</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contato">
+        <div class="footer-grid">
+            <div class="footer-item">
+                <!-- Logo no Footer -->
+                <img src="imagens/logo.png" alt="Vendas Alves" class="footer-logo-img">
+                
+                <p style="color: var(--text-secondary);">
+                    Soluções completas em aço para sua obra ou indústria. Qualidade garantida e atendimento especializado.
+                </p>
+            </div>
+
+            <div class="footer-item">
+                <h3>Contato</h3>
+                <p style="margin-bottom: 10px;"><i class="fas fa-phone-alt" style="color:var(--accent-color); margin-right:10px;"></i> +55 11 98823-8004</p>
+                <p style="margin-bottom: 10px;"><i class="fas fa-envelope" style="color:var(--accent-color); margin-right:10px;"></i> alvesvendas@grupoacos.com.br</p>
+                <p><i class="fas fa-map-marked" style="color:var(--accent-color); margin-right:10px;"></i> Sítio Cercado, Curitiba - PR</p>
+            </div>
+
+            <div class="footer-item">
+                <h3>Links</h3>
+                <ul style="line-height: 2; color: var(--text-secondary);">
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#filiais">Empresas do Grupo</a></li>
+                    <li><a href="blog.html">Blog de Notícias</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; color: #555; font-size: 0.8rem;">
+            &copy; 2025 Vendas Alves. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Menu Mobile
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
