@@ -248,7 +248,14 @@ header {
 /* --- PRODUTOS --- */
 .products-section { padding: 80px 5%; background-color: var(--bg-color); }
 .section-title { text-align: center; margin-bottom: 50px; }
-.section-title h2 { font-size: 2.2rem; text-transform: uppercase; color: white; position: relative; display: inline-block; }
+.section-title h2 { 
+    font-size: 2.2rem; 
+    text-transform: uppercase; 
+    color: white; 
+    position: relative; 
+    display: inline-block;
+    margin-bottom: 20px; /* Espaço para a linha abaixo não sobrepor o texto seguinte */
+}
 .section-title h2::after { content: ''; width: 60px; height: 4px; background: var(--accent-color); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
 
 .products-grid {
